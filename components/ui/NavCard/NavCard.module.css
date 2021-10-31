@@ -1,0 +1,37 @@
+.navCard {
+  width: 30vw;
+  height: 25vh;
+  padding: 2px;
+  color: white !important;
+  background-color: transparent;
+  font-size: 15vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.navCard:hover {
+  color: var(--primary-color) !important;
+}
+
+.navLabel {
+  font-size: 3rem;
+}
+
+.navButton {
+  display: none;
+}
+
+@media screen and (max-width: 736px) {
+  .navLabel {
+    display: none;
+  }
+
+  .navButton {
+    display: block;
+  }
+}

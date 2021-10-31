@@ -1,0 +1,27 @@
+.contactsContainer {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  filter: invert();
+  width: 15vw;
+}
+
+.contactItem {
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .contactItem {
+    width: 90vw;
+  }
+
+  .logo {
+    width: 40vw;
+  }
+}
