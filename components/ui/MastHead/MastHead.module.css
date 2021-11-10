@@ -5,18 +5,71 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  color: white;
   text-align: center;
 }
 
 .mastTitle {
-  font-size: 5rem;
+  font-size: 4rem;
   text-transform: uppercase;
   font-weight: bolder;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.mastSubtitleContainer {
+  background-color: var(--primary-color);
+  padding: 0.5rem 1rem;
 }
 
 .mastSubtitle {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
+  margin: 0;
+  color: black;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+  opacity: 0;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+@media screen and (max-width: 600px) {
+  .mastSubtitle {
+    font-size: 1.4rem;
+  }
 }
