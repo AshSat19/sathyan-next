@@ -55,7 +55,7 @@ function TopNav() {
       >
         <div className="flex flex-column justify-content-between">
           {navItems.map((n) => (
-            <Link href={n.route}>
+            <Link href={n.route} key={n.route}>
               <Button
                 icon={n.icon}
                 label={n.label}
